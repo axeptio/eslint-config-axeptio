@@ -34,6 +34,17 @@ module.exports = {
         "strict": ["warn", "never"],
         "indexof/no-indexof": ["warn"],
     
-        "prettier/prettier": 1 // Means Warn
+        // prettier config goes here
+        "prettier/prettier": [
+            1,  //warn 
+            { 
+                "singleQuote": true, 
+                "semi" : true, 
+                "bracketSpacing": true, 
+                "printWidth": 130, 
+                "arrowParens": "avoid", 
+                "trailingComma": "none"
+            }
+        ]
     }
 };
