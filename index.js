@@ -1,26 +1,19 @@
 module.exports = {
-
-    globals: {
-        MyGlobal: true
-    },
+    
     "env": {
         "node": true,
         "mocha": true,
         "es6": true
     },
     "parserOptions": {
-        "ecmaVersion": 2021
+        "ecmaVersion": 2021,
+        "requireConfigFile": false
     },
     "plugins": [
         "indexof",
         "prettier"
     ],
-    "extends": [
-        "eslint:recommended",
-        "standard",
-        "plugin:import/recommended",
-        "plugin:node/recommended"
-    ],
+    "parser": "@babel/eslint-parser",
     "rules": {
         // Exception
         "semi": ["warn", "always"],
