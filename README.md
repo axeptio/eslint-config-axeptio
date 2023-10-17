@@ -1,21 +1,33 @@
-# eslint-config-axeptio
-To use this package in your projects do the following:
+# ESLint and Prettier config for Back projects
 
-1. run npm i -D eslint-config-axeptio from the command line
-2. add the following dev dependencies to your package.json file:
+## Installing
 
-    "eslint": "^8.29.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-indexof": "^0.1.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0"
+1. In your project folder, run:
 
-3. run npm install
-4. create a .eslintrc.js file and add the following entry:
-    {
-        "extends": "eslint-config-axeptio"
-    }
+```sh
+npm i -D @axeptio/eslint-config-axeptio eslint prettier eslint-config-prettier eslint-config-standard eslint-plugin-import eslint-plugin-indexof eslint-plugin-promise eslint-plugin-prettier
+```
+
+2. Now, create (or update) a `.eslintrc` file with the following content:
+
+```json
+{
+ "extends": "eslint-config-axeptio"
+}
+```
+
+3. Add prettier `.prettierrc` in your repo 
+
+```sh
+{
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "printWidth": 130,
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "endOfLine": "auto"
+}
+```
 
